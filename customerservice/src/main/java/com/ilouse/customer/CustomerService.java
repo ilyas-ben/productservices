@@ -1,5 +1,5 @@
 package com.ilouse.customer;
 
-public interface CustomerService {
-    void registerCustomer(CustomerRequest customerRequest);
+public interface CustomerService  {
+    Customer registerCustomer(Customer customer) throws IllegalAccessException ;
 }
