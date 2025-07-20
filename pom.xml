@@ -90,5 +90,6 @@
   </build>
   <modules>
     <module>customerservice</module>
+      <module>fraudservice</module>
   </modules>
 </project>
