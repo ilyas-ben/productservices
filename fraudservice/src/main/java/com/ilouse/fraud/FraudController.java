@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("fraud-check")
+@RequestMapping("fraudcheck")
 @AllArgsConstructor
 public class FraudController {
 
