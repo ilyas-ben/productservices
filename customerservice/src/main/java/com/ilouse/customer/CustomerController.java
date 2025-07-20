@@ -1,4 +1,4 @@
-package com.ilouse;
+package com.ilouse.customer;
 
 
 import org.springframework.web.bind.annotation.RequestBody;

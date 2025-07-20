@@ -1,4 +1,4 @@
-package com.ilouse;
+package com.ilouse.customer;
 
 public class CustomerRequest {
     String name;
