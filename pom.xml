@@ -11,19 +11,21 @@
     <url>http://www.example.com</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <packaging>jar</packaging>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
-        <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
+        <spring.boot.maven.plugin.version>3.5.3</spring.boot.maven.plugin.version>
+        <spring.boot.dependencies.version>3.5.3</spring.boot.dependencies.version>
+
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.11</version>
-                <scope>import</scope>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.dependencies.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -31,7 +33,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
