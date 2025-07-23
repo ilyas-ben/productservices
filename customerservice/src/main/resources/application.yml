@@ -1,6 +1,7 @@
 server:
   port: 8080
 
+
 spring:
   application:
     name: customerservice
@@ -20,6 +21,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+
 
 eureka:
   client:
