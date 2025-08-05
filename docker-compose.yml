@@ -1,0 +1,33 @@
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: productservices
+      MYSQL_USER: ilyas
+      MYSQL_PASSWORD: bench
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    networks:
+      - mysql-net
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    networks:
+      - mysql-net
+
+
+networks:
+  mysql-net:
+    driver: bridge
+  app-net:
+    driver: bridge
+
+volumes:
+  mysql-data:
